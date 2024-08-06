@@ -8,8 +8,8 @@ import { PageContactComponent } from './page-contact/page-contact.component';
 
 const routes: Routes = [
   { path:"", component: PageHomeComponent },
-  { path:"/apropos", component: PageAboutComponent },
-  { path:"/contact", component: PageContactComponent}
+  { path:"apropos", component: PageAboutComponent },
+  { path:"contact", component: PageContactComponent}
 ];
 
 @NgModule({
