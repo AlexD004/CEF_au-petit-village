@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+/* IMPORT FONTS */
+/* Body Font */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+/* Title Font */
+@font-face {
+	font-family : "Bubbleboddy";
+	src: url('./assets/fonts/bubbleboddyneue-regular-trial.woff');
+	src: url('./assets/fonts/bubbleboddyneue-regular\ trial.ttf') format('truetype'),
+		url('./assets/fonts/bubbleboddyneue-regular-trial.otf') format('opentype');
+}
+
+/* SET UP COLORS */
+:root {
+    --cream: #F9D0A3;
+    --yellow: #FDD90B;
+    --black: #151217;
+    --red: #DA001E;
+    --white: #ffffff;
+  }
+
+
+/* GENERAL STYLES */
+body{
+    font-family: 'Comfortaa', 'Arial', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Bubbleboddy', 'Arial', sans-serif;
+}
+.flex{
+    display: flex;
+}

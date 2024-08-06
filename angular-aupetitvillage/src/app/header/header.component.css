@@ -1,0 +1,35 @@
+img#logo {
+    width: 150px;
+}
+.flex{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 20px;
+}
+nav{
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    margin: 10px 0;
+    color:var(--black);
+    text-decoration: none;
+    font-weight: 300;
+    transition: .3s ease;
+}
+nav a:hover{
+    color: var(--red);
+    font-weight: 900;
+}
+
+@media screen and (min-width: 576px)
+{
+    .flex{
+        flex-direction: row;
+    }
+    nav a{
+        margin: 0 10px;
+    }
+}
