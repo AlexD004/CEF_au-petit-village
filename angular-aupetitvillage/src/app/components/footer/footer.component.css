@@ -1,0 +1,15 @@
+ ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: var(--black);
+
+    padding: 20px;
+ }
+ ul a{
+    color: var(--cream);
+    margin-left: 10px;
+ }
+ ul a:hover{
+    color: var(--red);
+ }
