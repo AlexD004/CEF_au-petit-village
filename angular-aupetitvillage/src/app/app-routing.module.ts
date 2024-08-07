@@ -2,14 +2,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 /* Import components for routing */
-import { PageHomeComponent } from './pages/page-home/page-home.component';
-import { PageAboutComponent } from './pages/page-about/page-about.component';
-import { PageContactComponent } from './pages/page-contact/page-contact.component';
+import { HomeComponent } from './pages/home/home.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 const routes: Routes = [
-  { path:"", component: PageHomeComponent },
-  { path:"apropos", component: PageAboutComponent },
-  { path:"contact", component: PageContactComponent}
+  { path:"", component: HomeComponent },
+  { path:"apropos", component: AboutComponent },
+  { path:"contact", component: ContactComponent}
 ];
 
 @NgModule({
