@@ -1,6 +1,9 @@
 <div class="flex">
-    <img id="logo" src="../../assets/Logo_au petit village.jpg" alt="Logo Au Petit Village"/>
-    <nav class="flex">
+    <div>
+        <img id="logo" src="../../assets/Logo_au petit village.jpg" alt="Logo Au Petit Village"/>
+        <img id="navBurger" src="../../assets/bars-solid.svg" alt="Menu" (click)="openNavMobile()"/>
+    </div>
+    <nav class="flex" *ngIf="mobile == false || isOpen == true">
         <a routerLink="/apropos">À propos</a>
         <a routerLink="/contact">Contact</a>
     </nav>

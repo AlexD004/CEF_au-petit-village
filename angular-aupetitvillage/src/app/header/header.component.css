@@ -8,7 +8,13 @@ img#logo {
 
     padding: 0 20px;
 }
+.flex div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 nav{
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -24,6 +30,12 @@ nav a:hover{
     font-weight: 900;
 }
 
+#navBurger{
+    display: block;
+    width: 32px;
+    cursor: pointer;
+}
+
 @media screen and (min-width: 576px)
 {
     .flex{
@@ -31,5 +43,9 @@ nav a:hover{
     }
     nav a{
         margin: 0 10px;
+        min-width: 100px;
+    }
+    #navBurger{
+        display: none;
     }
 }
