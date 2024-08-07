@@ -3,11 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { PageHomeComponent } from './page-home/page-home.component';
-import { PageAboutComponent } from './page-about/page-about.component';
-import { PageContactComponent } from './page-contact/page-contact.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { PageHomeComponent } from './pages/page-home/page-home.component';
+import { PageAboutComponent } from './pages/page-about/page-about.component';
+import { PageContactComponent } from './pages/page-contact/page-contact.component';
 
 @NgModule({
   declarations: [
