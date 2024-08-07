@@ -1,0 +1,34 @@
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+img{
+    max-width: 200px;
+    margin: 40px auto;
+}
+.productDescription,
+.productDescription h1{
+    text-align: center;
+}
+.price{
+    color: var(--red);
+    font-weight: 900;
+    font-size:2em;
+    margin-top: 0;
+}
+
+@media screen and (min-width: 576px)
+{
+    section{
+        flex-direction: row;
+    }
+    img{
+        margin: 0 80px;
+    }
+    .productDescription,
+    .productDescription h1{
+        text-align: left;
+    }
+}
