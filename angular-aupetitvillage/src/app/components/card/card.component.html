@@ -1,1 +1,7 @@
-<ul><li *ngFor="let product of products; index as i">{{i}} - {{ product.name }} <img src="{{ product.image }}"/></li></ul>
+<ul>
+    <li *ngFor="let product of products; index as i" class="product item{{i+1}}">
+        <img src="{{ product.image }}" alt="Figurine du personnage {{ product.name }}"/>
+        <h3>{{ product.name }}</h3>
+        <p class="prix">{{ product.price }} €</p>
+    </li>
+</ul>
