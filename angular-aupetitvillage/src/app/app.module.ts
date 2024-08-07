@@ -5,9 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { PageHomeComponent } from './pages/page-home/page-home.component';
-import { PageAboutComponent } from './pages/page-about/page-about.component';
-import { PageContactComponent } from './pages/page-contact/page-contact.component';
+import { HomeComponent } from './pages/home/home.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ContactComponent } from './pages/contact/contact.component';
 import { CardComponent } from './components/card/card.component';
 
 @NgModule({
@@ -15,9 +15,9 @@ import { CardComponent } from './components/card/card.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    PageHomeComponent,
-    PageAboutComponent,
-    PageContactComponent,
+    HomeComponent,
+    AboutComponent,
+    ContactComponent,
     CardComponent
   ],
   imports: [

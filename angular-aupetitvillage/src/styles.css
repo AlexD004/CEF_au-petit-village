@@ -20,6 +20,9 @@
 
 
 /* GENERAL STYLES */
+nav .isActive{
+    color:var(--red);
+}
 body{
     font-family: 'Comfortaa', 'Arial', sans-serif;
     margin: 0;
