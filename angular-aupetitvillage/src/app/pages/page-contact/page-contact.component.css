@@ -1,0 +1,15 @@
+.contactBloc{
+    text-align: center;
+    margin: 40px 0;
+}
+.contactBloc p{
+    margin: 5px 0;
+}
+.contactBloc a{
+    text-decoration: none;
+    color:var(--red);
+    font-weight: 900;
+}
+.contactBloc a:hover{
+    color:var(--black);
+}
