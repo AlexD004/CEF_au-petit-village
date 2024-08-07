@@ -1,1 +1,7 @@
-<p>footer works!</p>
+<ul>
+    <li *ngFor="let socialURL of socialURLs" >
+        <a *ngIf="socialURL.url != '' " href="{{ socialURL.url }}" target="_blank" title="{{ socialURL.name }}">
+            <i class="fa-brands {{ socialURL.icon }}"></i>
+        </a>
+    </li>
+</ul>
