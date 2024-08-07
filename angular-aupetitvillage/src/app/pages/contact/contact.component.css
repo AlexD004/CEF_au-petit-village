@@ -1,5 +1,9 @@
+.content{
+    display: flex;
+    justify-content: space-around;
+}
 .contactBloc{
-    text-align: center;
+    text-align: left;
     margin: 40px 0;
 }
 .contactBloc p{
@@ -12,4 +16,4 @@
 }
 .contactBloc a:hover{
     color:var(--black);
-}
+} 
