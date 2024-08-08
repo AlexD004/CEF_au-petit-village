@@ -7,10 +7,9 @@ div {
     border-radius: 10px;
     cursor: pointer;
 }
-div:hover,
-div.isActive {
+div:hover{
     background-color: var(--yellow);
 }
-div.isActive:hover{
-    background-color: var(--cream);
+div.isActive i{
+    color:var(--black);
 }
