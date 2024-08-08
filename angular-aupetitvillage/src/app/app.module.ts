@@ -10,9 +10,8 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { CardComponent } from './components/card/card.component';
 import { ProductComponent } from './pages/product/product.component';
-import { SortOrderPricesPipe } from './pipes/sort-order-prices.pipe';
 import { BoutonComponent } from './components/bouton/bouton.component';
-import { OrderByIDPipe } from './pipes/order-by-id.pipe';
+import { SortByPricePipe } from './pipes/sort-by-price.pipe';
 
 @NgModule({
   declarations: [
@@ -24,9 +23,8 @@ import { OrderByIDPipe } from './pipes/order-by-id.pipe';
     ContactComponent,
     CardComponent,
     ProductComponent,
-    SortOrderPricesPipe,
     BoutonComponent,
-    OrderByIDPipe
+    SortByPricePipe
   ],
   imports: [
     BrowserModule,
