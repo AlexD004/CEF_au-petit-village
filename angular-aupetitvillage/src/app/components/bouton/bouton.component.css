@@ -1,0 +1,16 @@
+div {
+    background-color: var(--white);
+    border:1px solid var(--black);
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 20px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+div:hover,
+div.isActive {
+    background-color: var(--yellow);
+}
+div.isActive:hover{
+    background-color: var(--cream);
+}
