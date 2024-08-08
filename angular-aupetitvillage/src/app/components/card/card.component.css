@@ -1,6 +1,7 @@
 ul{
     list-style: none;
     margin:0 auto;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -35,5 +36,14 @@ a{
 }
 .filters{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+} 
+@media screen and (min-width: 576px)
+{
+    .filters{
+        flex-direction: row;
+    }
 }

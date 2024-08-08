@@ -1,10 +1,12 @@
 .content{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 }
 .contactBloc{
-    text-align: left;
-    margin: 40px 0;
+    text-align: center;
+    margin: 20px 0;
 }
 .contactBloc p{
     margin: 5px 0;
@@ -16,4 +18,14 @@
 }
 .contactBloc a:hover{
     color:var(--black);
-} 
+}  
+@media screen and (min-width: 576px)
+{
+    .content{
+        flex-direction: row;
+    }
+    .contactBloc{
+        text-align: left;
+        margin: 40px 0;
+    }
+}

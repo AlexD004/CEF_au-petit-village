@@ -3,13 +3,21 @@ div {
     border:1px solid var(--black);
     display: inline-block;
     padding: 5px 10px;
-    margin: 20px 5px;
+    margin: 5px 0;
     border-radius: 10px;
     cursor: pointer;
+    min-width: 150px;
+    text-align: center;
 }
 div:hover{
     background-color: var(--yellow);
 }
 div.isActive i{
     color:var(--black);
+}
+@media screen and (min-width: 576px)
+{
+    div {
+        margin: 20px 5px;
+    }
 }
