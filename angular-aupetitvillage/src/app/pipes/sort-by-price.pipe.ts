@@ -1,9 +1,9 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'sortOrderPrices'
+  name: 'sortByPrice'
 })
-export class SortOrderPricesPipe implements PipeTransform {
+export class SortByPricePipe implements PipeTransform {
 
   transform( products: any[], order: number): any[] {
 

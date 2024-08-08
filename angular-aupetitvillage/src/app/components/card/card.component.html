@@ -3,7 +3,7 @@
     <app-bouton btnText="Prix Décroissants" [isOrder]='isUnorder' (click)="sortUnorderPrices()"></app-bouton>
 </div>
 <ul>
-    <li *ngFor="let product of ( products | sortOrderPrices:order ); index as i" class="product item{{i+1}}">
+    <li *ngFor="let product of ( products | sortByPrice:order ); index as i" class="product item{{i+1}}">
         <a [routerLink]="['/produit', product.slug ]">
         <div class="produit">
             <img src="{{ product.image }}" alt="Figurine du personnage {{ product.name }}"/>
