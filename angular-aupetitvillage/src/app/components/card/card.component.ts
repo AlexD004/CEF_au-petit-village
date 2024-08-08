@@ -8,7 +8,7 @@ import { ProductsService } from '../../services/products.service';
 })
 export class CardComponent {
 
-  order: number = 1;
+  order: number = 0;
   isOrder: boolean = false;
   isUnorder: boolean = false;
 
@@ -20,13 +20,24 @@ export class CardComponent {
   }
 
   sortOrderPrices(){
-    this.order = 1
-    this.isUnorder = false
-    this.isOrder = !this.isOrder
+
+    if(this.order==1){
+      this.order=0
+      this.isOrder=false
+    }else{
+      this.order=1
+      this.isOrder=true
+      this.isUnorder=false
+    }
   }
   sortUnorderPrices(){
-    this.order = -1
-    this.isOrder = false
-    this.isUnorder = !this.isUnorder
+    if(this.order==-1){
+      this.order=0
+      this.isUnorder=false
+    }else{
+      this.order=-1
+      this.isOrder=false
+      this.isUnorder=true
+    }
   }
 }

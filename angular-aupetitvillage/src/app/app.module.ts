@@ -12,6 +12,7 @@ import { CardComponent } from './components/card/card.component';
 import { ProductComponent } from './pages/product/product.component';
 import { SortOrderPricesPipe } from './pipes/sort-order-prices.pipe';
 import { BoutonComponent } from './components/bouton/bouton.component';
+import { OrderByIDPipe } from './pipes/order-by-id.pipe';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { BoutonComponent } from './components/bouton/bouton.component';
     CardComponent,
     ProductComponent,
     SortOrderPricesPipe,
-    BoutonComponent
+    BoutonComponent,
+    OrderByIDPipe
   ],
   imports: [
     BrowserModule,
