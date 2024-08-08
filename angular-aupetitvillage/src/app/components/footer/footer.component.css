@@ -5,6 +5,7 @@
     background-color: var(--black);
 
     padding: 20px;
+    margin:0;
  }
  ul a{
     color: var(--cream);
