@@ -12,6 +12,8 @@ export class CardComponent {
   isOrder: boolean = false;
   isUnorder: boolean = false;
 
+  searchText: string = "";
+
   products: any[] = [];
   constructor(private productsService: ProductsService) {}
 
