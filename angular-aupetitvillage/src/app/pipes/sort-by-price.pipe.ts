@@ -21,9 +21,10 @@ export class SortByPricePipe implements PipeTransform {
         else if(a.price > b.price) { return 1 *order; }
         else return 0;
 
-      }
+      } 
 
     })
+
 
   }
 

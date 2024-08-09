@@ -41,6 +41,23 @@ a{
     align-items: center;
     margin: 20px 0;
 } 
+.filters input[type="text"]{
+    min-width: 150px;
+    min-height: 20px;
+    padding: 5px 10px;
+    border: 1px solid var(--black);
+    border-radius: 10px;
+    font-family: 'Comfortaa';
+    color: var(--black);
+}
+.filters input[type="text"]::placeholder{
+    font-family: 'Comfortaa', 'Arial', sans-serif;
+}
+.filters input[type="text"]:focus,
+.filters input[type="text"]:focus-visible{
+    border-color: var(--yellow);
+}
+
 @media screen and (min-width: 576px)
 {
     .filters{

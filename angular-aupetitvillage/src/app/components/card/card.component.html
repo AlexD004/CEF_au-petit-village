@@ -1,9 +1,10 @@
 <div class="filters">
     <app-bouton btnText="Prix Croissants" [isOrder]='isOrder' (click)="sortOrderPrices()"></app-bouton>
     <app-bouton btnText="Prix Décroissants" [isOrder]='isUnorder' (click)="sortUnorderPrices()"></app-bouton>
+    <input type="text" placeholder="Rechercher" [(ngModel)]="searchText" (change)="searchText = searchText">
 </div>
 <ul>
-    <li *ngFor="let product of ( products | sortByPrice:order ); index as i" class="product item{{i+1}}">
+    <li *ngFor="let product of ( products | sortByPrice:order | filterByName:searchText ); index as i" class="product item{{i+1}}">
         <a [routerLink]="['/produit', product.slug ]">
         <div class="produit">
             <img src="{{ product.image }}" alt="Figurine du personnage {{ product.name }}"/>
